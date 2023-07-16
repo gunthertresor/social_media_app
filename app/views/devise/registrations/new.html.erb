@@ -28,7 +28,7 @@
           <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
         </div>
         <div class = "mb-3">
-          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Password onfirmation' %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Password Confirmation' %>
         </div>
         <%= f.submit "Sign up", class: 'btn btn-primary d-block w-100'%>
       <% end %>
@@ -42,7 +42,7 @@
 
      <div class = "card text-center py-2 mt-3 mx-auto" style="width: 23rem;">
       <div class = "card-text">
-        have an account?
+        Have an account?
         <%= link_to 'Sign in', new_user_session_path, class: 'fs-6 my-4 text-decoration-none text-info' %>
       </div>
     </div>
