@@ -46,3 +46,7 @@ body{
 .facebook{
   width: 1rem;
 }
+
+.card::-webkit-scrollbar{
+  width: 0;
+}
