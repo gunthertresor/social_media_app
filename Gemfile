@@ -52,9 +52,10 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 gem 'bootstrap', '~> 5.3.0.alpha3'
 gem "sassc-rails"
-gem "font-awesome-sass", "~> 6.1"
 gem "autoprefixer-rails"
 gem 'devise'
+gem "font-awesome-sass", "~> 6.4.0"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

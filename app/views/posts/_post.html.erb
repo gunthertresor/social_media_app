@@ -30,8 +30,8 @@
       <div id="carouselExampleIndicators" class="carousel slide">
 
         <div class="carousel-inner">
-          <% post.images.each_index_of do |image, i|%>
-            <div class="carousel-item <%= i==0 ? 'active' : '' %>" style= "height: 25rem;">
+          <% post.images.each_with_index do |image, i|%>
+            <div class="carousel-item <%= i==0 ? 'active' : '' %>" style= "height: 25rem;" style="height:25rem">
               <%= image_tag image, class: 'd-block w-100', style:'max-height: 100%; object-fit: cover;' %>
             </div>
           <%end%>
@@ -45,17 +45,17 @@
           <span class="visually-hidden">Next</span>
         </button>
         <div class="carousel-indicators" style = "position:static">
-          <% post.images.each_index_of do |image, i|%>
+          <% post.images.each_with_index do |image, i|%>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<%= i %>" class="<%= i==0 ? 'active' : '' %> bg-dark" <%= i==0 ? 'aria-current="true"' : '' %> aria-label="Slide <%= i+1 %>"></button>
           <% end %>
         </div>
       </div>
-      <div class ="card-body">
-        <p class="card-text"><%= post.caption%></p>
+        <p class="card-text"><span class ="fw-bold"><%= post.user.username %></span> <%= post.caption %></p>
+        <small class="text-muted"><%= time_ago_in_words(post.created_at) %></small>
       </div>
-    </div>
     <div class ="card-footer">
-      Featured
+      <input type="text" class="w-75" placeholder ="Add a comment..." style="border:none">
+      <a href="#" class="txt-primary fw-bold mx-4" style="text-decoration:none">Post</a>
     </div>
   </div>
 </div>

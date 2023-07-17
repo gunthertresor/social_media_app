@@ -4,7 +4,7 @@ class TurboDeviseController < ApplicationController
       controller.render(options.merge(formats: :html))
     rescue ActionView::MissingTemplate => error
       if get?
-        raise :error
+        raise error
       elsif has_errors? && default_action
         render rendering_options.merge(formats: :html, status: :unprocessable_entity)
       else
