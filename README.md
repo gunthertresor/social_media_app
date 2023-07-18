@@ -1,24 +1,15 @@
 # README
+# Still in development 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A clone of Instagram with all(nearly all it's features)
+- Login Authenification
+- create, edit, view , delete posts
+- create, edit, view , delete stories
+- follow friends
+- view friend suggestions
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##Made with love with ruby on rails
